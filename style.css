@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: justify;
 }
 body{
     background-color: black;
@@ -85,7 +84,7 @@ table{
     background-color:whitesmoke;
     }
     table{
-        width:100%
+        width:80%
     }
     #links{
         margin: 0;
