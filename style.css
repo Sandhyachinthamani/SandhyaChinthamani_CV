@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: justify;
+}
+body{
+    background-color: black;
 }
 #container{
     display: flex;
@@ -11,18 +15,19 @@
     gap: 30px;
 }
 #nav-bar{
-    background-color: beige;
+    background-color: rgb(211, 236, 181);
     padding: 50px;
     position: fixed;
     width:25%;
     height:100%;
+    margin: 0 8px;
 }
 #content{
-    background-color: rgb(186, 203, 224);
+    background-color: rgb(179, 213, 255);
     line-height: 30px;
     padding:50px;
     width:75%;
-    margin-left: 25%;
+    margin-left: 26%;
 }
 #details, #name{
     padding-bottom: 20px;
@@ -31,9 +36,11 @@
     padding-bottom: 20px;
     text-decoration: none;
     list-style-type: none;
+    font-weight: 600;
 }
 #name{
     color:brown;
+    font-weight: 600;
 }
 #content h3{
     color:rgb(108, 3, 44);
@@ -52,12 +59,38 @@ table{
     width: 70%;
 }
 #links{
-    margin: 35px;
+    margin: 30px;
 }
 #links a{
     padding-right: 100px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 .section{
     padding-bottom: 30px;
+}
+@media screen and (max-width: 480px) {
+    #container{
+        flex-direction: column;
+        gap: 0px;
+    }
+    #nav-bar{
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+    #content{
+    margin: 0;
+    width: 100%;
+    padding: 30px;
+    background-color:whitesmoke;
+    }
+    table{
+        width:100%
+    }
+    #links{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
